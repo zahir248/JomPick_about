@@ -11,6 +11,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #23272F; /* Add this line to set background color to blue */
+
 }
 
 .newsletter {
@@ -22,6 +24,7 @@ body {
 
 .newsletter-right {
     display: none;
+    background-color: white; /* Add this line to set background color to blue */
 }
 
 .newsletter-right img {
