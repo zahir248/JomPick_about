@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter {
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-right {
+    display: none;
+}
+
+.newsletter-right img {
+    width: 110%;
+    display: block;
+    margin-top: 45px;
+}
+
+.newsletter-left {
+    padding: 3.2rem 2rem;
+    height: 384px;
+    color: aliceblue;
+    background: #57A0D2;
+}
+
+.newsletter-left h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.newsletter-left h1 span {
+    color: black;
+    display: block;
+}
+
+.newsletter-left p {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    word-spacing: 2px;
+    font-weight: 600;
+    text-align: justify; /* Add this line */
+}
+
+@media screen and (min-width: 768px) {
+    .newsletter-right {
+        display: block;
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 700px;
+    }
+
+    .newsletter-left {
+        height: 100%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0E4C92;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3A7CA5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .newsletter-left {
+        padding: 3.2rem 1rem; /* Reduce padding */
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-top: 10px; /* Adjust margin-top */
+        margin-bottom: 10px; /* Add margin-bottom for space between buttons */
+        padding: 10px 20px; /* Smaller padding for smaller screens */
+        font-size: 1rem; /* Smaller font size */
+    }
+}
+
+
